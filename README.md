@@ -10,11 +10,11 @@ Tyler D'Angelo
 
 1. HTML
 2. CSS
-3. Bootstrap (_Grid System_)
+3. Bootstrap (_Card Component_)
 4. Javascript
 5. JQuery
 6. [Github](https://github.com/tydangelo18).
-7. [Github Pages]().
+7. [Github Pages](https://tydangelo18.github.io/dayplanner/.).
 
 ### Sneak Peek
 
