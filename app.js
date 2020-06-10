@@ -1,30 +1,52 @@
 // Display Current Date
-(function () {
-  let m = moment();
+$(document).ready(function () {
+  const date = $(".date");
+  const inputForm = $(".input");
+  const hours = ["9AM", "10AM", "11AM", "12AM"];
+  const currentHour = moment().format("dddd MMM Mo YYYY");
 
-  let current = document.getElementById("displayDate");
-  current.innerHTML = m.format("dddd MMM Mo YYYY");
-})();
+  date.text(moment().format("llll"));
 
-$(".save").on("click", function () {
-  let m = $(this).parent().attr("placeholder");
-  let textContent = $("input").val().trim();
+  for (let i in hours) {
+    const time = parseInt(i) + 9;
+    const groupDiv = $("<div>");
+    const input = $("<input>");
+    const hourDiv = $("<div>");
+    const buttonDiv = $("<div>");
+    const saveBtn = $("<button>");
+    const saveIcon = $("<i>");
 
-  localStorage.setItem(m, textContent);
-  console.log(m, textContent);
-});
+    groupDiv.addClass("input-group mb-3");
+    input.addClass("form-control").attr("type", "text");
+    hourDiv.addClass("input-group-prepend input-group-text").text(hours[i]);
+    buttonDiv.addClass("input-group-append");
+    saveBtn.addClass("btn btn-primary saveButton");
+    saveIcon.addClass("material-icons").text("save");
 
-$("#9am").children("input").attr("placeholder", localStorage.getItem("9am"));
-$("#10am").children("input").attr("placeholder", localStorage.getItem("10am"));
-$("#11am").children("input").attr("placeholder", localStorage.getItem("11am"));
-$("#12pm").children("input").attr("placeholder", localStorage.getItem("12pm"));
-$("#1pm").children("input").attr("placeholder", localStorage.getItem("1pm"));
-$("#2pm").children("input").attr("placeholder", localStorage.getItem("2pm"));
-$("#3pm").children("input").attr("placeholder", localStorage.getItem("3pm"));
-$("#4pm").children("input").attr("placeholder", localStorage.getItem("4pm"));
-$("#5pm").children("input").attr("placeholder", localStorage.getItem("5pm"));
-// need window.onload
+    if (time > currentHour) {
+      input.addClass("future");
+    } else if (time < currentHour) {
+      input.addClass("past");
+    } else {
+      input.addClass("current");
+    }
 
-const m = moment(); // moment object
+    if (localStorage.getItem(hours[i])){
+      input.val(localStorage.getItem(hours[i]));
+    }
 
-console.log(m.format("dddd MMM Mo YYYY")); // .format uses a token found in moment.js documentation
+
+    saveBtn.append(saveIcon);
+    buttonDiv.append(saveBtn);
+    groupDiv.append(hourDiv, input, buttonDiv);
+    inputForm.append(groupDiv);
+  }
+
+  $(document).on("click", ".saveButton", function(e){
+    e.preventDefault();
+    const inputVal = $(this).parents(".input-group-append").siblings("input").val();
+    const inputHour = $(this).parents(".input-group-append").siblings(".input-group-text").text();
+  
+    localStorage.setItem(inputHour, inputVal);
+  })
+})

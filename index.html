@@ -20,136 +20,18 @@
     <script src="lib/moment/moment.min.js"></script>
   </head>
   <body>
-    <!--container for Javascript Date output-->
-
+    
+    <div class="jumbotron text-center">
+      <h1>Work Day Planner</h1>
+      <h4>Simple day planner to help you schedule your work hours</h4>
+      <h4 class="date"></h4>
+    </div>
     <div class="container">
-      <h4 id="displayDate"></h4>
-
-    <!--9am-->
-    <div class="card mb-1">
-      <div class="row justify-content center" id="9am">
-        <span id="time" class="text-body col-1">9 AM</span>
-        <input
-          type="text"
-          id="9"
-          class="col-10"
-          placeholder="-"
-        />
-        <button class="save btn-pimary col-1">Save</button>
-      </div>
+      <form class="inputs">
+    
+      </form>
     </div>
 
-    <!--10am-->
-    <div class="card mb-1">
-      <div class="row justify-content" id="10am">
-        <span id="time" class="text-body col-1">10 AM</span>
-        <input
-          type="text"
-          id="10"
-          class="col-10"
-          placeholder="-"
-        />
-        <button class="save btn-pimary col-1">Save</button>
-      </div>
-    </div>
-
-    <!--11am-->
-    <div class="card mb-1">
-      <div class="row justify-content" id="11am">
-        <span id="time" class="text-body col-1">11 AM</span>
-        <input
-          type="text"
-          id="11"
-          class="col-10"
-          placeholder="-"
-        />
-        <button class="save btn-pimary col-1">Save</button>
-      </div>
-    </div>
-
-    <!--Noon-->
-    <div class="card mb-1">
-      <div class="row justify-content" id="12pm">
-        <span id="time" class="text-body col-1">Noon</span>
-        <input
-          type="text"
-          id="12"
-          class="col-10"
-          placeholder="-"
-        />
-        <button class="save btn-pimary col-1">Save</button>
-      </div>
-    </div>
-
-    <!--1pm-->
-    <div class="card mb-1">
-      <div class="row justify-content" id="1pm">
-        <span id="time" class="text-body col-1">1 PM</span>
-        <input
-          type="text"
-          id="1"
-          class="col-10"
-          placeholder="-"
-        />
-        <button class="save btn-pimary col-1">Save</button>
-      </div>
-    </div>
-
-    <!--2pm-->
-    <div class="card mb-1">
-      <div class="row justify-content" id="2pm">
-        <span id="time" class="text-body col-1">2 PM</span>
-        <input
-          type="text"
-          id="2"
-          class="col-10"
-          placeholder="-"
-        />
-        <button class="save btn-pimary col-1">Save</button>
-      </div>
-    </div>
-
-    <!--3pm-->
-    <div class="card mb-1">
-      <div class="row justify-content" id="3pm">
-        <span id="time" class="text-body col-1">3 PM</span>
-        <input
-          type="text"
-          id="3"
-          class="col-10"
-          placeholder="-"
-        />
-        <button class="save btn-pimary col-1">Save</button>
-      </div>
-    </div>
-
-    <!--4pm-->
-    <div class="card mb-1">
-      <div class="row justify-content" id="4pm">
-        <span id="time" class="text-body col-1">4 PM</span>
-        <input
-          type="text"
-          id="4"
-          class="col-10"
-          placeholder="-"
-        />
-        <button class="save btn-pimary col-1">Save</button>
-      </div>
-    </div>
-
-    <!--5pm-->
-    <div class="card mb-1">
-      <div class="row justify-content" id="5pm">
-        <span id="time" class="text-body col-1">5 PM</span>
-        <input
-          type="text"
-          id="5"
-          class="col-10"
-          placeholder="-"
-        />
-        <button class="save btn-pimary col-1">Save</button>
-      </div>
-    </div>
 
     <script src="app.js"></script>
   </body>
