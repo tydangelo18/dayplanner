@@ -1,5 +1,7 @@
 # dayplanner
 
+- [Live Link](https://tydangelo18.github.io/dayplanner/.)
+
 ### Contributors
 
 Tyler D'Angelo
@@ -13,9 +15,22 @@ Tyler D'Angelo
 3. Bootstrap (_Card Component_)
 4. Javascript
 5. JQuery
-6. [Github](https://github.com/tydangelo18).
-7. [Github Pages](https://tydangelo18.github.io/dayplanner/.).
+6. moment.js
+7. [Github](https://github.com/tydangelo18).
+8. [Github Pages](https://tydangelo18.github.io/dayplanner/.).
 
-### Sneak Peek
+### Features
 
-![image](https://user-images.githubusercontent.com/60044459/82742352-9441a380-9d22-11ea-9d82-6e8c35288af2.png)
+[x] Mobile-Responsive
+[x] Saved items locally-stored
+[x] Current Date Display
+
+### Preview
+
+#### Desktop
+
+![image](https://user-images.githubusercontent.com/60044459/84581265-2a5a6e00-ada5-11ea-8180-59d0209fff43.png)
+
+#### Mobile
+
+![image](https://user-images.githubusercontent.com/60044459/84581281-54139500-ada5-11ea-8a89-a419e77fa78e.png)
