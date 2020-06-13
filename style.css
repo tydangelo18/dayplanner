@@ -5,8 +5,28 @@
   box-sizing: border-box;
 }
 
+.jumbotron {
+  background-color: #4b4444;
+  color: #ffffff;
+  opacity: .5;
+}
+
+.saveButton {
+  background-color: #4b4444;
+  box-shadow: 1px 1px #272525;
+
+}
+
+.form-control {
+  box-shadow: 1px 1px #423a3a;
+}
+
+.input-group-prepend {
+  box-shadow: 1px 1px #201e1e;
+}
+
 body {
-  background-image: linear-gradient(120deg, #17eee7, #f3ea48);
+  background-image: linear-gradient(120deg, #dc17ee, #f6eb0c);
   min-height: 100vh;
 }
 
@@ -16,31 +36,4 @@ body {
   padding: 10px;
 }
 
-#displayDate {
-  display: flex;
-  justify-content: center;
-}
 
-
-span {
-  background-color: black;
-  color: white;
-  font-size: 0.78em;
-  border-radius: 1em 0em 0em 1em;
-  border: solid 1px #ffffff;
-}
-
-.save {
-  background-color: #17eee7;
-  font-size: 0.78em;
-  border-radius: 0em 1em 1em 0em;
-  border: solid 1px #ffffff;
-}
-
-input {
-  background-color: #ffffff;
-  font-size: 0.78em;
-  border: solid 1px #ffffff;
-  color: #000000;
-  font-weight: bold;
-}
