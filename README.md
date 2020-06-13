@@ -21,9 +21,9 @@ Tyler D'Angelo
 
 ### Features
 
-[x] Mobile-Responsive
-[x] Saved items locally-stored
-[x] Current Date Display
+- [x] Mobile-Responsive
+- [x] Saved items locally-stored
+- [x] Current Date Display
 
 ### Preview
 
