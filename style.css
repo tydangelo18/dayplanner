@@ -8,21 +8,25 @@
 .jumbotron {
   background-color: #4b4444;
   color: #ffffff;
-  opacity: .5;
+  opacity: 0.65;
 }
 
 .saveButton {
   background-color: #4b4444;
-  box-shadow: 1px 1px #272525;
-
+  box-shadow: 1.75px 1.75px #272525;
+  border-radius: 0rem 10rem 10rem 0rem;
+  height: 38px;
 }
 
 .form-control {
-  box-shadow: 1px 1px #423a3a;
+  box-shadow: 1.75px 1.75px #4b4444;
+  height: 38px;
 }
 
 .input-group-prepend {
-  box-shadow: 1px 1px #201e1e;
+  box-shadow: 1.75px 1.75px #4b4444;
+  height: 38px;
+  border-radius: 10rem 0rem 0rem 10rem;
 }
 
 body {
@@ -35,5 +39,3 @@ body {
   margin: auto;
   padding: 10px;
 }
-
-
